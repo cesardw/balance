@@ -19,7 +19,7 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build de la imagen de Docker
-      run: docker build -t cesardw/balancedecargas:latest .
+      run: docker build -t cesardw/balancedecarga:latest .
 
     - name: Push de la imagen a Docker Hub
-      run: docker push cesardw/balancedecargas:latest
+      run: docker push cesardw/balancedecarga:latest
